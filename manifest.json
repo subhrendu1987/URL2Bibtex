@@ -1,0 +1,19 @@
+{
+
+  "description": "Create bibtex @misc entry for this page",
+  "manifest_version": 2,
+  "name": "URL2Bibtex",
+  "version": "1.0",
+  "homepage_url": "https://github.com/subhrendu1987/URL2Bibtex.git",
+  "icons": {
+    "48": "icons/URL2BIBtex.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["url2bibtex.js"]
+    }
+  ]
+
+}
